@@ -1,4 +1,11 @@
 function lineGraph(country){
+	
+	if(country == 'all'){
+		document.getElementById('country-node').innerHTML = 'World';
+	}
+	else{
+		document.getElementById('country-node').innerHTML = country;
+	}
 
     var svg = d3.selectAll("#lineNode"),
         margin = {top: 20, right: 60, bottom: 70, left: 80},
